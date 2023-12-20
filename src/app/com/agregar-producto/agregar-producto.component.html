@@ -1,0 +1,11 @@
+<form class="formulario" [formGroup]="formulario">
+
+    <label for="nombre">nombre</label>
+    <input type="text" id="nombre" formControlName="nombre">
+
+    <label for="precio">precio</label>
+    <input type="number" id="precio" formControlName="precio">
+
+    <input type="submit" (click)="agregarProducto()">
+
+</form>
