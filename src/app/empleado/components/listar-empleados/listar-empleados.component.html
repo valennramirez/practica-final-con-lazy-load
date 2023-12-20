@@ -1,0 +1,19 @@
+<table>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Gmail</th>
+            <th>Telefono</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let i of listadoEmpleados">
+            <td>{{i.nombre}}</td>
+            <td>{{i.gmail}}</td>
+            <td>{{i.telefono}}</td>
+            <td><button (click)="eliminarEmpleado(i.id)">Eliminar</button></td>
+            <td><a  [routerLink]="['/editar', i.id]">Editar</a></td>
+        </tr>
+    </tbody>
+</table>

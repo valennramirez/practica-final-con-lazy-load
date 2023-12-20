@@ -3,20 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ListaProductosComponent } from './com/lista-productos/lista-productos.component';
-import { AgregarProductoComponent } from './com/agregar-producto/agregar-producto.component';
-import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { EmpleadoModule } from './empleado/empleado.module';
+import { FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListaProductosComponent,
-    AgregarProductoComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    EmpleadoModule,
+    ReactiveFormsModule, 
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
